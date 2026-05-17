@@ -1,3 +1,20 @@
+let events = JSON.parse(localStorage.getItem("events")) || [
+  {
+    id: 1,
+    title: "AI Bootcamp",
+    category: "Technology",
+    seats: 30,
+    registered: 10
+  },
+
+  {
+    id: 2,
+    title: "Basketball Tournament",
+    category: "Sports",
+    seats: 20,
+    registered: 5
+  }
+];
 const eventContainer = document.getElementById("eventContainer");
 
 const totalEvents = document.getElementById("totalEvents");
